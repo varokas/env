@@ -11,6 +11,14 @@ if [ -f /etc/redhat-release ]; then
     make -C ~/neovim
     sudo make -C ~/neovim install
   fi 
+  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+  if [ ! -f ~/.config/nvim ]; then
+    mkdir -p ~/.config/nvim 
+  fi
+
+  ln -sf ~/.env/files/init.vim ~/.config/nvim/init.vim
 fi
 
 if [ -f /etc/lsb-release ]; then
