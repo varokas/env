@@ -16,3 +16,13 @@ fi
 if [ -f /etc/lsb-release ]; then
   apt-get update
 fi
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  brew cask install teamviewer
+  brew cask install lastpass
+  brew cask install google-chrome
+
+  brew install mas
+  mas install 904280696 #Things 3
+  mas install 409183694 #Keynote
+fi
