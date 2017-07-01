@@ -8,3 +8,8 @@ fi
 if [ -f /etc/lsb-release ]; then
   apt-get update
 fi
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  brew install mas
+fi
+
