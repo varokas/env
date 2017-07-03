@@ -18,10 +18,14 @@ if [ -f /etc/lsb-release ]; then
 fi
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
+  brew install yarn
+
   brew cask install teamviewer
   brew cask install google-chrome
   brew cask install visual-studio-code
   brew cask install spectacle
+  brew cask install transmission
+  brew cask install vlc
 
   mas install 904280696 #Things 3
 
