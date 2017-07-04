@@ -18,7 +18,7 @@ if [ -f /etc/lsb-release ]; then
 fi
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  brew install nvim
+  brew install neovim
 fi
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
