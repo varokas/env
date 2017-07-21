@@ -6,6 +6,7 @@ Automated environment setup
 
     #Install git via brew
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    
     brew install git
     
 ## Installing
@@ -13,6 +14,10 @@ Automated environment setup
     git clone https://github.com/varokas/env.git ~/.env
     cd ~/.env
     
+## Running 
+Take a look at the scripts, especially the tools.sh before proceeding
+    
+    ./run.sh
     
 ## Misc
 Adding users in centos
