@@ -16,3 +16,4 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 export PATH=$PATH:$HOME"/.config/yarn/global/node_modules/.bin"
+export PATH=$PATH:/usr/local/opt/go/libexec/bin

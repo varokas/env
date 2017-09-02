@@ -19,6 +19,7 @@ fi
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   brew install yarn
+  brew install java
 
   brew cask install teamviewer
   brew cask install google-chrome
